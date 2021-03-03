@@ -1,0 +1,48 @@
+.Home {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.firstHome {
+  background-color: black;
+  color: white;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 50px 70px 50px;
+  justify-content: space-evenly;
+}
+
+.logo {
+  width: 350px;
+}
+
+.socialMedia {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.mediaLogos{
+  width: 50px;
+  padding: 10px;
+  border-radius: 100px;
+  background-color: white;
+}
+
+.secondHome {
+  display: flex;
+  flex-direction: column;
+  background-color: darkmagenta;
+  width: 70%;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.background {
+  background: url(https://c.stocksy.com/a/935B00/z9/2641023.jpg) 50% 0/cover no-repeat;
+  padding-top: 150%;
+}

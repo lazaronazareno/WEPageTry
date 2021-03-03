@@ -1,0 +1,42 @@
+.menuClasses {
+  position: fixed;
+  width: 65%;
+  background-color: darkred;
+  padding: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+}
+
+.menuText {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 0 5px;
+  position: relative;
+  border-radius: 100%;
+
+  &:hover {
+    color: white;
+    transition: all 0.3s ease-out;
+    }
+  
+  &:hover:after {
+    width: 100%;
+  }
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: white;
+      content: '';
+      display: block;
+      height: 1px;
+      transform: translate(-50%, -50%);
+      transition: width 0.3s ease-out;
+      width: 0;
+      text-decoration: inherit;
+      box-sizing: inherit;
+      background-repeat: inherit;
+    }
+}
