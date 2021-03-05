@@ -17,8 +17,18 @@ background: radial-gradient(circle, rgba(100,0,0,1) 50%, rgba(0,0,0,1) 100%);
   padding: 40px;
 }
 
+.subtitulo{
+  border: black 2px solid;
+  padding: 10px;
+}
+
 .nombreLogo {
   width: 500px;
+}
+
+.text {
+  padding-bottom: 10px;
+  border-bottom: 2px black solid;
 }
 
 @keyframes mover {
