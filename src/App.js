@@ -1,22 +1,25 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Productos from "./components/sidepages/Productos/productos";
 import "./styles.css";
-//import Frontpage from "./components/frontpage/frontpage";
-//import Home from "./components/home/home";
-//import Sidebar from "./components/sidebar/sidebar";
-//import Contactos from "./components/sidepages/Contactos/contactos";
-//import Nosotros from "./components/sidepages/Nosotros/nosotros";
-//import Fotos from "./components/sidepages/Fotos/fotos";
+import Home from "./components/home/home";
+import Contact from "./components/sidepages/Contactos/contactos";
+import Nosotros from "./components/sidepages/Nosotros/nosotros";
+import Fotos from "./components/sidepages/Fotos/fotos";
 
 function App() {
   return (
     <div className="App">
-      {
-        //<Frontpage />
-      }
-      {
-        //<Home />
-      }
-      <Productos />
+      <div>
+        <Router forceRefresh>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/Fotos" component={Fotos} />
+            <Route exact path="/Productos" component={Productos} />
+            <Route exact path="/Nosotros" component={Nosotros} />
+            <Route exact path="/Contacto" component={Contact} />
+          </Switch>
+        </Router>
+      </div>
     </div>
   );
 }
