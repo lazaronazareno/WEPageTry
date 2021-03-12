@@ -3,12 +3,13 @@ import React, { useState } from "react";
 import Sidebar from "../../sidebar/sidebar";
 import { productsList } from "../../../assets/products";
 import { productsListRequest } from "../../../assets/products";
-import photos from "../../../assets/photos";
-import Carousel from "../../carousel/carousel";
+import CarouselProductos from "../../carousel/carouselProductos";
 
 function Productos() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
+  const [current, setCurrent] = useState(0);
+  const [current2, setCurrent2] = useState(0);
 
   return (
     <div className="products">
@@ -21,9 +22,11 @@ function Productos() {
             <div>
               <img
                 alt={index}
+                key={index}
                 className="productsImage"
                 onClick={() => {
                   setIsOpen(!isOpen);
+                  setCurrent(index - 1);
                 }}
                 src={src}
               />
@@ -33,8 +36,13 @@ function Productos() {
         </div>
         {isOpen && (
           <dialog className="dialog" open>
-            <Carousel images={photos} />
-            <button onClick={() => setIsOpen(!isOpen)}>x</button>
+            <CarouselProductos images={productsList} index={current} />
+            <button
+              className="buttonProducts"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              x
+            </button>
           </dialog>
         )}
         <h1>Modelos A Pedido </h1>
@@ -43,9 +51,12 @@ function Productos() {
             <div>
               <img
                 alt={index}
+                key={index}
                 className="productsImage"
                 onClick={() => {
                   setIsOpen2(!isOpen2);
+                  setCurrent2(index - 1);
+                  console.log(index);
                 }}
                 src={src}
               />
@@ -55,8 +66,13 @@ function Productos() {
         </div>
         {isOpen2 && (
           <dialog className="dialog" open>
-            <Carousel images={photos} />
-            <button onClick={() => setIsOpen2(!isOpen2)}>x</button>
+            <CarouselProductos images={productsListRequest} index={current2} />
+            <button
+              className="buttonProducts"
+              onClick={() => setIsOpen2(!isOpen2)}
+            >
+              x
+            </button>
           </dialog>
         )}
       </div>

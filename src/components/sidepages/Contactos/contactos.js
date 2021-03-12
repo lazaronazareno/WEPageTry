@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import Sidebar from "../../sidebar/sidebar";
-import "./styles.scss";
 import nombre from "../../../assets/nombre.png";
 import media1 from "../../../assets/socialMedia/instagram.png";
 import media2 from "../../../assets/socialMedia/facebook.png";
 import media3 from "../../../assets/socialMedia/whatsapp.png";
+import "./styles.scss";
 
 function Contacto() {
   return (
@@ -17,9 +18,15 @@ function Contacto() {
         <h3>otra informacion que podria necesitar</h3>
         <img className="nombreLogo" src={nombre} alt="logonombre" />
         <div className="socialMedia">
-          <img className="mediaLogos" src={media1} alt="instagram" />
-          <img className="mediaLogos" src={media2} alt="facebook" />
-          <img className="mediaLogos" src={media3} alt="whatsapp" />
+          <Link to="www.instagram.com" className="link">
+            <img className="mediaLogos" src={media1} alt="instagram" />
+          </Link>
+          <Link to="www.facebook.com" className="link">
+            <img className="mediaLogos" src={media2} alt="facebook" />
+          </Link>
+          <Link to="www.whatsapp.com" className="link">
+            <img className="mediaLogos" src={media3} alt="whatsapp" />
+          </Link>
         </div>
       </div>
     </div>

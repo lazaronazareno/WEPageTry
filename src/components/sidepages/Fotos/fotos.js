@@ -1,4 +1,4 @@
-import Carousel from "../../carousel/carousel";
+import CarouselFotos from "../../carousel/carouselFotos";
 import Sidebar from "../../sidebar/sidebar";
 import "./styles.scss";
 import photos from "../../../assets/photos";
@@ -12,7 +12,7 @@ function Fotos() {
         <h2 className="subtitulo">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         </h2>
-        <Carousel images={photos} />
+        <CarouselFotos images={photos} />
         <h3 className="text">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
