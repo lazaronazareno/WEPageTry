@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 
-import arrow from "../../assets/icons.png";
+//import arrow from "../../assets/icons.png";
 
 import "./styles.scss";
 
-function Carousel(props) {
+function CarouselFotos(props) {
   const [x, setX] = useState(0);
   const goLeft = () => {
     x === 0 ? setX(-100 * (props.images.length - 1)) : setX(x + 100);
-    console.log(props.images.index);
+    console.log(props.images[props.index].src);
   };
   const goRight = () => {
     x === -100 * (props.images.length - 1) ? setX(0) : setX(x - 100);
@@ -30,17 +30,20 @@ function Carousel(props) {
           className="slide"
           style={{ transform: `translateX(${x}%)` }}
         >
-          <img alt={index} className="image" src={src} />
+          <img key={index} alt={index} className="image" src={src} />
         </div>
       ))}
-      <button type="button" className="goLeft" onClick={goLeft}>
-        <img className="arrowLeft" alt="arrowleft" src={arrow} />
-      </button>
-      <button type="button" className="goRight" onClick={goRight}>
-        <img className="arrowRight" alt="arrowright" src={arrow} />
-      </button>
+      {
+        // Left and right arrows from the carousel
+        //      <button type="button" className="goLeft" onClick={goLeft}>
+        //        <img className="arrowLeft" alt="arrowleft" src={arrow} />
+        //      </button>
+        //      <button type="button" className="goRight" onClick={goRight}>
+        //        <img className="arrowRight" alt="arrowright" src={arrow} />
+        //     </button>
+      }
     </div>
   );
 }
 
-export default Carousel;
+export default CarouselFotos;

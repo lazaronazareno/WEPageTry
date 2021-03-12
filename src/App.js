@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Productos from "./components/sidepages/Productos/productos";
 import "./styles.css";
 import Home from "./components/home/home";
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <Router forceRefresh>
+        <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/Fotos" component={Fotos} />
@@ -18,7 +18,7 @@ function App() {
             <Route exact path="/Nosotros" component={Nosotros} />
             <Route exact path="/Contacto" component={Contact} />
           </Switch>
-        </Router>
+        </BrowserRouter>
       </div>
     </div>
   );
