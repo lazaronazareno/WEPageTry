@@ -1,13 +1,26 @@
-import "./styles.scss";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import { createBrowserHistory } from "history/createBrowserHistory";
+import { useState } from "react";
+import "./styles.scss";
+import Burger from "./navbarResponsive";
 
 const history = createBrowserHistory;
 
 function Navbar() {
+  const [burgerOpen, setBurgerOpen] = useState(false);
   return (
     <Router history={history} forceRefresh>
-      <div className="menuClasses">
+      <div
+        className={`menu ${burgerOpen ? "closed" : ""}`}
+        onClick={() => {
+          setBurgerOpen(!burgerOpen);
+        }}
+      >
+        <Burger
+          onClick={() => {
+            setBurgerOpen(!burgerOpen);
+          }}
+        />
         <Link to="/" className="menuText">
           FrontPage
         </Link>

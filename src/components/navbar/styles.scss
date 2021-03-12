@@ -1,4 +1,4 @@
-.menuClasses {
+.menu {
   position: fixed;
   width: 65%;
   background-color: darkred;
@@ -6,7 +6,22 @@
   display: flex;
   justify-content: space-evenly;
   align-items: space-evenly;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
 }
+// from here styles for navbar responsive 
+
+
+
+.closed{
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  transform: translateX(0%);
+  width: 0;
+}
+
+//till here
 
 .menuText {
   display: inline-block;
@@ -39,4 +54,90 @@
       box-sizing: inherit;
       background-repeat: inherit;
     }
+}
+// from here styles for navbar responsive
+
+
+@media (max-width: 600px) {
+  .menu {
+    background-color: darkred;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .closed{
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    transform: translateX(0%);
+    width: 0;
+  }
+  
+  .burger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 10vh;
+    height: 6vh;
+    background-color: inherit;
+    border: none;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .burgerchanged {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 10vh;
+    height: 6vh;
+    background-color: black;
+    border: none;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 5vh;
+    height: 1vh;
+    border-radius: 1vh;
+    background-color: black;
+  }
+  
+  .changed1 {
+    width: 5vh;
+    height: 1vh;
+    border-radius: 1vh;
+    transform: rotate(-45deg) translate(-1vh, 1vh);
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+  }
+  
+  .changed2 {
+    opacity: 0;
+  }
+  
+  .changed3 {
+      width: 5vh;
+    height: 1vh;
+    border-radius: 1vh;
+    transform: rotate(45deg) translate(-1vh, -1vh);
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+  }
+
+  .menuText {
+    display: flex;
+    
+    left: 0;
+    justify-content: space-between;
+  }
 }

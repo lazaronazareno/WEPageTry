@@ -46,3 +46,18 @@
   background: url(https://c.stocksy.com/a/935B00/z9/2641023.jpg) 50% 0/cover no-repeat;
   padding-top: 150%;
 }
+
+@media (max-width: 600px) {
+  .firstHome {
+    width: 100%;
+    padding: 60px 40px 60px 40px;
+  }
+
+  .logo {
+    width: 250px;
+  }
+  
+  .background {
+    display: none;
+  }
+}
