@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <Router history={history} forceRefresh>
       <div
-        className={`menu ${burgerOpen ? "closed" : ""}`}
+        className={`menu ${burgerOpen ? "open" : ""}`}
         onClick={() => {
           setBurgerOpen(!burgerOpen);
         }}
@@ -21,19 +21,31 @@ function Navbar() {
             setBurgerOpen(!burgerOpen);
           }}
         />
-        <Link to="/" className="menuText">
+        <Link to="/" className={`menuText ${burgerOpen ? "menuOpen" : ""}`}>
           FrontPage
         </Link>
-        <Link to="/Nosotros" className="menuText">
+        <Link
+          to="/Nosotros"
+          className={`menuText ${burgerOpen ? "menuOpen" : ""}`}
+        >
           Nosotros
         </Link>
-        <Link to="/Fotos" className="menuText">
+        <Link
+          to="/Fotos"
+          className={`menuText ${burgerOpen ? "menuOpen" : ""}`}
+        >
           Fotos
         </Link>
-        <Link to="/Productos" className="menuText">
+        <Link
+          to="/Productos"
+          className={`menuText ${burgerOpen ? "menuOpen" : ""}`}
+        >
           Productos
         </Link>
-        <Link to="/Contacto" className="menuText">
+        <Link
+          to="/Contacto"
+          className={`menuText ${burgerOpen ? "menuOpen" : ""}`}
+        >
           Contacto
         </Link>
       </div>

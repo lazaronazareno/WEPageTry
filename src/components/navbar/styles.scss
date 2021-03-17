@@ -9,11 +9,15 @@
   transform: translateX(0);
   transition: transform 0.3s ease-in-out;
 }
+
+.burger {
+  display: none;
+}
+
 // from here styles for navbar responsive 
 
-
-
-.closed{
+.open {
+  display: flex;
   overflow: hidden;
   top: 0;
   right: 0;
@@ -60,23 +64,34 @@
 
 @media (max-width: 600px) {
   .menu {
-    background-color: darkred;
+    background-color: black;
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: auto;
     position: fixed;
     text-align: left;
     top: 0;
     left: 0;
     transform: translateX(0);
     transition: transform 0.3s ease-in-out;
+    padding: inherit;
+    height: 40px;
+    width: 60px;
   }
-  .closed{
+
+  .open{
     overflow: hidden;
     top: 0;
     right: 0;
     transform: translateX(0%);
-    width: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: darkred;
+    align-items: center;
+  }
+
+  .menuOpen {
+    display: flex;
   }
   
   .burger {
@@ -90,26 +105,26 @@
     border: none;
     align-items: center;
     z-index: 1;
+    top: 0;
+    left: 0;
+    position: absolute;
   }
   
   .burgerchanged {
     cursor: pointer;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 10vh;
-    height: 6vh;
-    background-color: black;
-    border: none;
-    align-items: center;
+    background-color: inherit;
     z-index: 1;
+    top: 0;
+    left: 0;
+    position: absolute;
   }
   
   .bar1, .bar2, .bar3 {
     width: 5vh;
     height: 1vh;
     border-radius: 1vh;
-    background-color: black;
+    background-color: white;
   }
   
   .changed1 {
@@ -136,8 +151,8 @@
 
   .menuText {
     display: flex;
-    
-    left: 0;
+    left: -100px;
     justify-content: space-between;
+    font-size: larger;
   }
 }
