@@ -44,7 +44,7 @@
 }
 
 .dialog {
-  position: relative;
+  position: fixed;
   background-color: black;
 }
 
@@ -71,5 +71,15 @@
   }
   100% {
     background-position: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .image {
+    width: 90%;
+  }
+  .dialog {
+    width: 90vw ;
+    height: 70vh;
   }
 }
