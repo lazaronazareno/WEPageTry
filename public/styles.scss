@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.animation {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  animation: Fade 3s ease-in-out 3s forwards;
+
+  &::before {
+    content: url(https://i.imgur.com/WG4v7BP.png);
+    transform: scale(.2);
+  }
+}
+
+
+@keyframes Fade {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation {
+    &::before {
+      transform: scale(.1)
+    }
+  }
+}

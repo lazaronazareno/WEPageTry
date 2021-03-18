@@ -1,0 +1,85 @@
+.products {
+  display: flex;
+  background: url(https://store-images.s-microsoft.com/image/apps.34025.13826031633665817.9277258c-303e-4d74-a0e3-06716290778a.9ad41b07-48ad-4f5d-8cff-1fe703f28204?mode=scale&q=90&h=1080&w=1920);
+  animation: mover 40s infinite alternate; 
+  overflow: hidden;
+}
+
+.productsMain {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgb(130,0,0);
+  background: radial-gradient(circle, rgba(100,0,0,1) 50%, rgba(0,0,0,1) 100%);
+  color: white;
+  padding: 40px;
+}
+
+.imagesDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px 10px 50px 10px;
+  border-bottom: 1px solid black;
+}
+
+.productsImage {
+  width: 250px;
+  height: 120px;
+  object-fit: cover;
+  margin: 4px;
+
+  &:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
+}
+
+.productsName {
+  font-size: medium;
+  margin: 0;
+  display: flex;
+}
+
+.dialog {
+  position: fixed;
+  background-color: black;
+}
+
+.buttonProducts {
+  width: 35px;
+  height: 30px;
+  font-size: x-large;
+  border: none;
+  background-color: white;
+  padding: 0;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0,0,0,0.5);
+    border: solid 2px white;
+    color: white
+  }
+}
+
+@keyframes mover {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .image {
+    width: 90%;
+  }
+  .dialog {
+    width: 90vw ;
+    height: 70vh;
+  }
+}

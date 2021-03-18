@@ -1,0 +1,100 @@
+.mainMenu {
+  background-color: black;
+  color: white;
+  width: 20vh;
+  height: 100vh;
+  padding: 40px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mainLogo {
+  width: 250px;
+}
+
+.mainMenuText, .mainMenuOpenText {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 0 5px;
+  position: relative;
+
+  &:hover {
+    color: darkred;
+    transition: all 0.3s ease-out;
+    }
+  
+  &:hover:after {
+    width: 100%;
+  }
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: darkred;
+      content: '';
+      display: block;
+      height: 1px;
+      transform: translate(-50%, -50%);
+      transition: width 0.3s ease-out;
+      width: 0;
+      text-decoration: inherit;
+      box-sizing: inherit;
+      background-repeat: inherit;
+    }
+}
+
+@media (max-width: 600px) {
+  .mainMenu{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    padding: inherit;
+    height: 40px;
+    width: 60px;
+  }
+
+  .mainMenuOpen {
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transform: translateX(0%);
+    width: 100vw;
+    height: 100vh;
+    background-color: darkred;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 1;
+  }
+
+  .mainMenuText {
+    display: flex;
+    left: -100px;
+    justify-content: space-between;
+  }
+
+  .mainMenuOpenText {
+    display: flex;
+    font-size: x-large;
+    border: 2px solid black;
+    border-block-start-style: inherit;
+    border-block-end-style: inherit;
+  }
+  
+  .mainLogo {
+    display: none;
+  }
+}

@@ -1,0 +1,47 @@
+.photos {
+  display: flex;
+  background: url(https://static-cse.canva.com/blob/142356/removing-background-images_Unsplash.bad043c2.jpeg);
+  animation: mover 40s infinite alternate; 
+  overflow: hidden;
+}
+
+.photosMain {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(130,0,0);
+background: radial-gradient(circle, rgba(100,0,0,1) 50%, rgba(0,0,0,1) 100%);
+  color: black;
+  padding: 40px;
+}
+
+.subtitulo{
+  border: black 2px solid;
+  padding: 10px;
+}
+
+.nombreLogo {
+  width: 500px;
+}
+
+.text {
+  padding-bottom: 10px;
+  border-bottom: 2px black solid;
+}
+
+@keyframes mover {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .photosMain {
+    width: 65%;
+  }
+}
