@@ -1,4 +1,4 @@
-.menu {
+.menu, .open{
   position: fixed;
   width: 65%;
   background-color: darkred;
@@ -13,19 +13,6 @@
 .burger {
   display: none;
 }
-
-// from here styles for navbar responsive 
-
-.open {
-  display: flex;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  transform: translateX(0%);
-  width: 0;
-}
-
-//till here
 
 .menuText, .menuOpen {
   display: inline-block;
@@ -83,6 +70,7 @@
     overflow: hidden;
     top: 0;
     left: 0;
+    padding: 0;
     transform: translateX(0%);
     width: 100vw;
     height: 100vh;
