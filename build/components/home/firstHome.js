@@ -13,15 +13,15 @@ function First() {
       <img className="logo" src={logo} alt="logo" />
       <h1>Y aqui habria un eslogan... SI TUVIERA UNO!! </h1>
       <div className="socialMedia">
-        <a target="_blank" rel="noopener noreferrer" href="www.instagram.com" className="link">
+        <Link to="www.instagram.com" className="link">
           <img className="mediaLogos" src={media1} alt="instagram" />
-        </a>
-        <a target="_blank" rel="noopener noreferrer" href="www.facebook.com" className="link">
+        </Link>
+        <Link to="www.facebook.com" className="link">
           <img className="mediaLogos" src={media2} alt="facebook" />
-        </a>
-        <a target="_blank" rel="noopener noreferrer" href="www.whatsapp.com" className="link">
+        </Link>
+        <Link to="www.whatsapp.com" className="link">
           <img className="mediaLogos" src={media3} alt="whatsapp" />
-        </a>
+        </Link>
       </div>
     </div>
   );

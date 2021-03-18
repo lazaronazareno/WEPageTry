@@ -1,4 +1,4 @@
-.mainMenu, .mainMenuOpen {
+.mainMenu {
   background-color: black;
   color: white;
   width: 20vh;
@@ -68,7 +68,6 @@
     display: flex;
     position: fixed;
     overflow: hidden;
-    padding: 0;
     top: 0;
     left: 0;
     transform: translateX(0%);

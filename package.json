@@ -1,9 +1,6 @@
 {
   "name": "intento-we-page",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
   "dependencies": {
     "@babel/runtime": "7.13.8",
     "@types/react-transition-group": "4.4.1",
