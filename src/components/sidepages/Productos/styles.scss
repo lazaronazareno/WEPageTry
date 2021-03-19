@@ -1,7 +1,7 @@
 .products {
   display: flex;
-  background: url(https://store-images.s-microsoft.com/image/apps.34025.13826031633665817.9277258c-303e-4d74-a0e3-06716290778a.9ad41b07-48ad-4f5d-8cff-1fe703f28204?mode=scale&q=90&h=1080&w=1920);
-  animation: mover 40s infinite alternate; 
+  background: url(../../../assets/backgrounds/backg3.jpg);
+  animation: mover 100s infinite alternate; 
   overflow: hidden;
 }
 
@@ -26,8 +26,8 @@
 }
 
 .productsImage {
-  width: 250px;
-  height: 120px;
+  width: 180px;
+  height: 250px;
   object-fit: cover;
   margin: 4px;
 

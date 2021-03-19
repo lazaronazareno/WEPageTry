@@ -35,7 +35,6 @@
 .secondHome {
   display: flex;
   flex-direction: column;
-  background-color: darkmagenta;
   width: 70%;
   height: 100%;
   overflow: scroll;
@@ -43,7 +42,7 @@
 }
 
 .background {
-  background: url(https://c.stocksy.com/a/935B00/z9/2641023.jpg) 50% 0/cover no-repeat;
+  background: url(../../assets/backgrounds/bhome.jpg) 50% 0/cover no-repeat;
   padding-top: 150%;
 }
 
