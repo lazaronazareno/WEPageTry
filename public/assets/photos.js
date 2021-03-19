@@ -1,33 +1,58 @@
+import imagen1 from "./photosGallery/imagen1.jpg";
+import imagen2 from "./photosGallery/imagen2.jpg";
+import imagen3 from "./photosGallery/imagen3.jpg";
+import imagen4 from "./photosGallery/imagen4.jpg";
+import imagen5 from "./photosGallery/imagen5.jpg";
+import imagen6 from "./photosGallery/imagen6.jpg";
+import imagen7 from "./photosGallery/imagen7.jpg";
+import imagen8 from "./photosGallery/imagen8.jpg";
+import imagen9 from "./photosGallery/imagen9.jpg";
+
 const photos = [
   {
-    src:
-      "https://www.purina.es/gato/purina-one/sites/default/files/2018-06/6_El_comportamiento_de_los_gatitos%20%282%29.jpg",
+    src: imagen1,
     name: "KASUARA",
     index: 1
   },
   {
-    src:
-      "https://www.eluniversal.com.mx/sites/default/files/2020/10/30/tabby-kitten-1517450_1280.jpg",
+    src: imagen2,
     name: "KASUARA",
     index: 2
   },
   {
-    src:
-      "https://www.ecestaticos.com/imagestatic/clipping/2f6/975/2f69756c991ac98fb8986390e09776bd.jpg",
+    src: imagen3,
     name: "KASUARA",
     index: 3
   },
   {
-    src:
-      "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59a669fc5bafe88febb3d6cc/gatito-cesped_0.jpg",
+    src: imagen4,
     name: "KASUARA",
     index: 4
   },
   {
-    src:
-      "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/5937e90a5bafe882f5bc09e6/gatitos-cesta_0.jpg",
+    src: imagen5,
     name: "KASUARA",
     index: 5
+  },
+  {
+    src: imagen6,
+    name: "KASUARA",
+    index: 6
+  },
+  {
+    src: imagen7,
+    name: "KASUARA",
+    index: 7
+  },
+  {
+    src: imagen8,
+    name: "KASUARA",
+    index: 8
+  },
+  {
+    src: imagen9,
+    name: "KASUARA",
+    index: 9
   }
 ];
 

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Sidebar from "../../sidebar/sidebar";
 import nombre from "../../../assets/nombre.png";
 import media1 from "../../../assets/socialMedia/instagram.png";
@@ -11,22 +10,21 @@ function Contacto() {
     <div className="contact">
       <Sidebar />
       <div className="contactMain">
-        <h1>titulo</h1>
-        <h2>Datos de contacto</h2>
-        <h3>aquivaunmail@mail.com.ar</h3>
-        <h3>telfono:12345678</h3>
-        <h3>otra informacion que podria necesitar</h3>
         <img className="nombreLogo" src={nombre} alt="logonombre" />
+        <h1>Datos de contacto:</h1>
+        <h3>devildetails.clothing@gmail.com</h3>
+        <h3>Celular : 1158445886</h3>
+        <h3>Para mas informacion visité nuestras redes :</h3>
         <div className="socialMedia">
-          <Link to="www.instagram.com" className="link">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/devildetailsclothing/" className="link">
             <img className="mediaLogos" src={media1} alt="instagram" />
-          </Link>
-          <Link to="www.facebook.com" className="link">
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/devildetailsclothing" className="link">
             <img className="mediaLogos" src={media2} alt="facebook" />
-          </Link>
-          <Link to="www.whatsapp.com" className="link">
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://wa.me/541158445886" className="link">
             <img className="mediaLogos" src={media3} alt="whatsapp" />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

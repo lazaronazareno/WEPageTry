@@ -1,7 +1,7 @@
 import CarouselFotos from "../../carousel/carouselFotos";
 import Sidebar from "../../sidebar/sidebar";
-import "./styles.scss";
 import photos from "../../../assets/photos";
+import "./styles.scss";
 
 function Fotos() {
   return (

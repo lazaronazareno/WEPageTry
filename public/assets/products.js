@@ -1,48 +1,50 @@
+import imagen1 from "./photosProductsModel/life.png";
+import imagen2 from "./photosProductsModel/slave.png";
+import imagen3 from "./photosProductsModel/sleep.png";
+import imagen4 from "./photosProductsModel/something.png";
+import mask1 from "./photosProductsModel/mask1.png";
+import mask2 from "./photosProductsModel/mask2.png";
+import mask3 from "./photosProductsModel/mask3.png";
+
+
 const productsList = [
   {
-    src:
-      "https://www.purina.es/gato/purina-one/sites/default/files/2018-06/6_El_comportamiento_de_los_gatitos%20%282%29.jpg",
-    name: "asd",
+    src: imagen1,
+    name: "Life is What you Make it",
     index: 1
   },
   {
-    src:
-      "https://www.eluniversal.com.mx/sites/default/files/2020/10/30/tabby-kitten-1517450_1280.jpg",
-    name: "fgh",
+    src: imagen2,
+    name: "Slave to Wage",
     index: 2
   },
   {
-    src:
-      "https://www.ecestaticos.com/imagestatic/clipping/2f6/975/2f69756c991ac98fb8986390e09776bd.jpg",
-    name: "jkl",
+    src: imagen3,
+    name: "Sleeping with Ghost",
     index: 3
+  },
+  {
+    src: imagen4,
+    name: "Something Rotten",
+    index: 4
   }
 ];
 
 const productsListRequest = [
   {
-    src:
-      "https://www.eluniversal.com.mx/sites/default/files/2020/10/30/tabby-kitten-1517450_1280.jpg",
-    name: "fgh",
+    src: mask1,
+    name: "Helena",
     index: 1
   },
   {
-    src:
-      "https://www.purina.es/gato/purina-one/sites/default/files/2018-06/6_El_comportamiento_de_los_gatitos%20%282%29.jpg",
-    name: "asd",
+    src: mask2,
+    name: "Second Sight",
     index: 2
   },
   {
-    src:
-      "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/59a669fc5bafe88febb3d6cc/gatito-cesped_0.jpg",
-    name: "qwer",
+    src: mask3,
+    name: "Death of Me",
     index: 3
-  },
-  {
-    src:
-      "https://www.ecestaticos.com/imagestatic/clipping/2f6/975/2f69756c991ac98fb8986390e09776bd.jpg",
-    name: "jkl",
-    index: 4
   }
 ];
 export { productsList, productsListRequest };

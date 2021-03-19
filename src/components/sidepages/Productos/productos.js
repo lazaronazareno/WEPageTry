@@ -45,7 +45,7 @@ function Productos() {
             </button>
           </dialog>
         )}
-        <h1>Modelos A Pedido </h1>
+        <h1>Barbijos </h1>
         <div className="imagesDiv">
           {productsListRequest.map(({ src, index, name }) => (
             <div>
