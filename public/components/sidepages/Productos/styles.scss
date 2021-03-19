@@ -30,6 +30,7 @@
   height: 250px;
   object-fit: cover;
   margin: 4px;
+  cursor: pointer;
 
   &:hover {
     transition: 0.5s;
@@ -79,7 +80,7 @@
     width: 90%;
   }
   .dialog {
-    width: 60vw ;
+    width: 70vw ;
     height: 80vh;
   }
 }
