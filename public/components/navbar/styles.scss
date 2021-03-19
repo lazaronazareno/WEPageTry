@@ -74,7 +74,8 @@
     transform: translateX(0%);
     width: 100vw;
     height: 100vh;
-    background-color: darkred;
+    background: rgb(130,0,0);
+    background: radial-gradient(circle, rgba(100,0,0,1) 50%, rgba(0,0,0,1) 100%);
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
